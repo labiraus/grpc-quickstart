@@ -1,0 +1,79 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-app-api
+  namespace: grpc-quickstart
+spec:
+  selector:
+    matchLabels:
+      app: app-api
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: app-api
+    spec:
+      containers:
+        - name: api
+          image: api:latest
+          ports:
+            - containerPort: 8080
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "200m"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-app-mud
+  namespace: grpc-quickstart
+spec:
+  selector:
+    matchLabels:
+      app: app-mud
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: app-mud
+    spec:
+      containers:
+        - name: mud
+          image: mud:latest
+          envFrom:
+            - configMapRef:
+                name: postgres-config
+            - secretRef:
+                name: postgres-secret
+          ports:
+            - containerPort: 8080
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "200m"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-app-user
+  namespace: grpc-quickstart
+spec:
+  selector:
+    matchLabels:
+      app: app-user
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: app-user
+    spec:
+      containers:
+        - name: user
+          image: user:latest
+          ports:
+            - containerPort: 8080
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "200m"

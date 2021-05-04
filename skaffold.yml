@@ -1,0 +1,61 @@
+apiVersion: skaffold/v2beta12
+kind: Config
+metadata:
+  name: grpc-quickstart
+build:
+  artifacts:
+  - image: api
+    context: ./apps/api
+    docker:
+      dockerfile: dockerfile
+  - image: golang
+    context: ./apps/golang
+    docker:
+      dockerfile: dockerfile
+  - image: csharp
+    context: ./apps/csharp
+    docker:
+      dockerfile: dockerfile
+  - image: cpp
+    context: ./apps/cpp
+    docker:
+      dockerfile: dockerfile
+  - image: dart
+    context: ./apps/dart
+    docker:
+      dockerfile: dockerfile
+  - image: java
+    context: ./apps/java
+    docker:
+      dockerfile: dockerfile
+  - image: kotlin
+    context: ./apps/kotlin
+    docker:
+      dockerfile: dockerfile
+  - image: node
+    context: ./apps/node
+    docker:
+      dockerfile: dockerfile
+  - image: objectivec
+    context: ./apps/objectivec
+    docker:
+      dockerfile: dockerfile
+  - image: php
+    context: ./apps/php
+    docker:
+      dockerfile: dockerfile
+  - image: python
+    context: ./apps/python
+    docker:
+      dockerfile: dockerfile
+  - image: ruby
+    context: ./apps/ruby
+    docker:
+      dockerfile: dockerfile
+deploy:
+  kubectl:
+    manifests:
+    - /kubernetes/namespace.yml
+    - /kubernetes/app.yml
+    - /kubernetes/service.yml
+    - /kubernetes/ingress.yml
