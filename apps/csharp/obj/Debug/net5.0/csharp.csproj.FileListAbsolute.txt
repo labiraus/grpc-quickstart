@@ -1,0 +1,16 @@
+C:\Users\Oliver.Hathaway\source\repos\Quickstarts\grpc-quickstart\apps\csharp\bin\Debug\net5.0\csharp.exe
+C:\Users\Oliver.Hathaway\source\repos\Quickstarts\grpc-quickstart\apps\csharp\bin\Debug\net5.0\csharp.deps.json
+C:\Users\Oliver.Hathaway\source\repos\Quickstarts\grpc-quickstart\apps\csharp\bin\Debug\net5.0\csharp.runtimeconfig.json
+C:\Users\Oliver.Hathaway\source\repos\Quickstarts\grpc-quickstart\apps\csharp\bin\Debug\net5.0\csharp.runtimeconfig.dev.json
+C:\Users\Oliver.Hathaway\source\repos\Quickstarts\grpc-quickstart\apps\csharp\bin\Debug\net5.0\csharp.dll
+C:\Users\Oliver.Hathaway\source\repos\Quickstarts\grpc-quickstart\apps\csharp\bin\Debug\net5.0\ref\csharp.dll
+C:\Users\Oliver.Hathaway\source\repos\Quickstarts\grpc-quickstart\apps\csharp\bin\Debug\net5.0\csharp.pdb
+C:\Users\Oliver.Hathaway\source\repos\Quickstarts\grpc-quickstart\apps\csharp\obj\Debug\net5.0\csharp.csprojAssemblyReference.cache
+C:\Users\Oliver.Hathaway\source\repos\Quickstarts\grpc-quickstart\apps\csharp\obj\Debug\net5.0\csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oliver.Hathaway\source\repos\Quickstarts\grpc-quickstart\apps\csharp\obj\Debug\net5.0\csharp.AssemblyInfoInputs.cache
+C:\Users\Oliver.Hathaway\source\repos\Quickstarts\grpc-quickstart\apps\csharp\obj\Debug\net5.0\csharp.AssemblyInfo.cs
+C:\Users\Oliver.Hathaway\source\repos\Quickstarts\grpc-quickstart\apps\csharp\obj\Debug\net5.0\csharp.csproj.CoreCompileInputs.cache
+C:\Users\Oliver.Hathaway\source\repos\Quickstarts\grpc-quickstart\apps\csharp\obj\Debug\net5.0\csharp.dll
+C:\Users\Oliver.Hathaway\source\repos\Quickstarts\grpc-quickstart\apps\csharp\obj\Debug\net5.0\ref\csharp.dll
+C:\Users\Oliver.Hathaway\source\repos\Quickstarts\grpc-quickstart\apps\csharp\obj\Debug\net5.0\csharp.pdb
+C:\Users\Oliver.Hathaway\source\repos\Quickstarts\grpc-quickstart\apps\csharp\obj\Debug\net5.0\csharp.genruntimeconfig.cache

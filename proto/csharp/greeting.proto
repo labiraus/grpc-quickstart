@@ -1,15 +1,16 @@
 syntax = "proto3";
 package csharp;
 option go_package = "github.com/labiraus/grpc-quickstart/proto/csharp";
+option csharp_namespace = "Labiraus.Grpc-Quickstart.Proto.CSharp";
 
-service Csharp {
-  rpc Greet (CsharpRequest) returns (CsharpReply) {}
+service CSharp {
+  rpc Greet (CSharpRequest) returns (CSharpReply) {}
 }
 
-message CsharpRequest {
+message CSharpRequest {
   string name = 1;
 }
 
-message CsharpReply {
+message CSharpReply {
   string message = 1;
 }
