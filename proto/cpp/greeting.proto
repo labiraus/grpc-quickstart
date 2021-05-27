@@ -1,0 +1,15 @@
+syntax = "proto3";
+package cpp;
+option go_package = "github.com/labiraus/grpc-quickstart/proto/cpp";
+
+service Cpp {
+  rpc Greet (CppRequest) returns (CppReply) {}
+}
+
+message CppRequest {
+  string name = 1;
+}
+
+message CppReply {
+  string message = 1;
+}

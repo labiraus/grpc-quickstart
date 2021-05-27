@@ -1,0 +1,12 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+package api;
+option go_package = "github.com/labiraus/grpc-quickstart/proto/api";
+
+service Confirmation {
+  rpc Confirm (google.protobuf.Empty) returns (ConfirmationResponse) {}
+}
+
+message ConfirmationResponse {
+  string name = 1;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+package python;
+option go_package = "github.com/labiraus/grpc-quickstart/proto/python";
+
+service Python {
+  rpc Greet (PythonRequest) returns (PythonReply) {}
+}
+
+message PythonRequest {
+  string name = 1;
+}
+
+message PythonReply {
+  string message = 1;
+}

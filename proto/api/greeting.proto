@@ -1,0 +1,26 @@
+syntax = "proto3";
+package api;
+option go_package = "github.com/labiraus/grpc-quickstart/proto/api";
+
+service Api {
+  rpc Greet (ApiRequest) returns (ApiReply) {}
+}
+
+message ApiRequest {
+  string name = 1;
+}
+
+message ApiReply {
+  string message = 1;
+  string cpp = 2;
+  string csharp = 3;
+  string dart = 4;
+  string golang = 5;
+  string java = 6;
+  string kotlin = 7;
+  string node = 8;
+  string objectivec = 9;
+  string php = 10;
+  string python = 11;
+  string ruby = 12;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+package dart;
+option go_package = "github.com/labiraus/grpc-quickstart/proto/dart";
+
+service Dart {
+  rpc Greet (DartRequest) returns (DartReply) {}
+}
+
+message DartRequest {
+  string name = 1;
+}
+
+message DartReply {
+  string message = 1;
+}

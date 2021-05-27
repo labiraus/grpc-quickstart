@@ -1,0 +1,15 @@
+syntax = "proto3";
+package php;
+option go_package = "github.com/labiraus/grpc-quickstart/proto/php";
+
+service Php {
+  rpc Greet (PhpRequest) returns (PhpReply) {}
+}
+
+message PhpRequest {
+  string name = 1;
+}
+
+message PhpReply {
+  string message = 1;
+}

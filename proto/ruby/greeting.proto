@@ -1,0 +1,15 @@
+syntax = "proto3";
+package ruby;
+option go_package = "github.com/labiraus/grpc-quickstart/proto/ruby";
+
+service Ruby {
+  rpc Greet (RubyRequest) returns (RubyReply) {}
+}
+
+message RubyRequest {
+  string name = 1;
+}
+
+message RubyReply {
+  string message = 1;
+}

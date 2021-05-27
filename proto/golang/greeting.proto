@@ -1,0 +1,15 @@
+syntax = "proto3";
+package golang;
+option go_package = "github.com/labiraus/grpc-quickstart/proto/golang";
+
+service Golang {
+  rpc Greet (GolangRequest) returns (GolangReply) {}
+}
+
+message GolangRequest {
+  string name = 1;
+}
+
+message GolangReply {
+  string message = 1;
+}

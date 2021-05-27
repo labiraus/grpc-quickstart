@@ -1,0 +1,5 @@
+version: v1beta1
+plugins:
+  - name: ruby
+    out: proto
+    opt: paths=source_relative

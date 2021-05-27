@@ -1,0 +1,15 @@
+syntax = "proto3";
+package objectivec;
+option go_package = "github.com/labiraus/grpc-quickstart/proto/objectivec";
+
+service ObjectiveC {
+  rpc Greet (ObjectiveCRequest) returns (ObjectiveCReply) {}
+}
+
+message ObjectiveCRequest {
+  string name = 1;
+}
+
+message ObjectiveCReply {
+  string message = 1;
+}

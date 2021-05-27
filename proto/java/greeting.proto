@@ -1,0 +1,15 @@
+syntax = "proto3";
+package java;
+option go_package = "github.com/labiraus/grpc-quickstart/proto/java";
+
+service Java {
+  rpc Greet (JavaRequest) returns (JavaReply) {}
+}
+
+message JavaRequest {
+  string name = 1;
+}
+
+message JavaReply {
+  string message = 1;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+package kotlin;
+option go_package = "github.com/labiraus/grpc-quickstart/proto/kotlin";
+
+service Kotlin {
+  rpc Greet (KotlinRequest) returns (KotlinReply) {}
+}
+
+message KotlinRequest {
+  string name = 1;
+}
+
+message KotlinReply {
+  string message = 1;
+}

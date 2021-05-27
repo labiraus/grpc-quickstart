@@ -1,0 +1,15 @@
+syntax = "proto3";
+package Node;
+option go_package = "github.com/labiraus/grpc-quickstart/proto/Node";
+
+service Node {
+  rpc Greet (NodeRequest) returns (NodeReply) {}
+}
+
+message NodeRequest {
+  string name = 1;
+}
+
+message NodeReply {
+  string message = 1;
+}
